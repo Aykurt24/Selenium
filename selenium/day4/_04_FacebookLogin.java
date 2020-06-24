@@ -1,6 +1,7 @@
 package selenium.day4;
 
 import org.openqa.selenium.By;
+import utils.BaseDriver;
 
 public class _04_FacebookLogin extends BaseDriver {
     public static void main(String[] args) throws InterruptedException {
