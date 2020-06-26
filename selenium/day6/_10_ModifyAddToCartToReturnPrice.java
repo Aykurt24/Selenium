@@ -9,11 +9,13 @@ import utils.BaseDriver;
 import java.util.ArrayList;
 import java.util.List;
 
-public class _08_GoToCheckoutPage extends BaseDriver {
+public class _10_ModifyAddToCartToReturnPrice extends BaseDriver {
     public static void main(String[] args) {
         driver.get("https://www.saucedemo.com/");
         login("standard_user", "secret_sauce");
-        String result = goToCheckoutPage("FirstName", "Aykurt", "1234");
+        Double backpackPrice = addToCart("Sauce Labs Backpack");
+        Double tShirtPrice = addToCart("Sauce Labs Bolt T-Shirt");
+        driver.quit();
     }
 
     // go to checkout page
@@ -59,8 +61,11 @@ public class _08_GoToCheckoutPage extends BaseDriver {
     }
 
     // add to cart function
-    private static void addToCart(String itemName) {
+    private static Double addToCart(String itemName) {
         driver.findElement(By.xpath("//div[text()='" + itemName + "']//following::button")).click();
+        String priceText = driver.findElement(By.xpath("//div[text()='" + itemName + "']//following::div[@class='inventory_item_price']")).getText();
+        priceText = priceText.replaceAll("[^\\d.]", "");
+        return Double.parseDouble(priceText);
     }
 
     // get the number of items in the cart

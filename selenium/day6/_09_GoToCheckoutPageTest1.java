@@ -9,11 +9,13 @@ import utils.BaseDriver;
 import java.util.ArrayList;
 import java.util.List;
 
-public class _08_GoToCheckoutPage extends BaseDriver {
+public class _09_GoToCheckoutPageTest1 extends BaseDriver {
     public static void main(String[] args) {
         driver.get("https://www.saucedemo.com/");
         login("standard_user", "secret_sauce");
         String result = goToCheckoutPage("FirstName", "Aykurt", "1234");
+        Assert.assertEquals("success!", result);
+        driver.quit();
     }
 
     // go to checkout page
