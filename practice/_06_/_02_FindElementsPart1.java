@@ -1,13 +1,12 @@
 package practice._06_;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+import utils.BaseDriver;
 
 import java.util.List;
 
-public class _02_FindElementsPart1 {
+public class _02_FindElementsPart1 extends BaseDriver {
 
     /*
         What is findElements?
@@ -22,10 +21,6 @@ public class _02_FindElementsPart1 {
      */
     public static void main(String[] args) {
 
-        System.setProperty("webdriver.chrome.driver", "D:\\Selenium dependency\\drivers\\chromedriver.exe");
-
-        WebDriver driver = new ChromeDriver();
-
         driver.get("https://www.saucedemo.com/");
 
         driver.manage().window().maximize();
@@ -39,7 +34,7 @@ public class _02_FindElementsPart1 {
         WebElement loginButton = driver.findElement(By.xpath("//input[@type='submit']"));
         loginButton.click();
 
-        List<WebElement> nameOfTheItems = driver.findElements(By.xpath("//div[@class='inventory_item_name']"));
+        List<WebElement> nameOfTheItems = driver.findElements(By.id("//div[@class='inventory_item_name']"));
 
         System.out.println(nameOfTheItems.size());
 
