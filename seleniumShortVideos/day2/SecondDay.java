@@ -1,4 +1,4 @@
-package SeleniumShortVideos.day2;
+package seleniumShortVideos.day2;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

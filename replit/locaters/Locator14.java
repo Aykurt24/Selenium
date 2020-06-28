@@ -6,6 +6,7 @@ import utils.BaseDriver;
 
 public class Locator14 extends BaseDriver {
     public static void main(String[] args) throws InterruptedException {
+
         driver.navigate().to("https://www.seleniumeasy.com/test/basic-first-form-demo.html");
 
         Thread.sleep(2000);

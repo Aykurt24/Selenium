@@ -1,4 +1,4 @@
-package SeleniumShortVideos.day3;
+package seleniumShortVideos.day3;
 
 public class thirdDay {
 
