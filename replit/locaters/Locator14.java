@@ -9,16 +9,16 @@ public class Locator14 extends BaseDriver {
 
         driver.navigate().to("https://www.seleniumeasy.com/test/basic-first-form-demo.html");
 
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         driver.findElement(By.id("at-cv-lightbox-close")).click();
 
         driver.findElement(By.xpath("//*[@id='treemenu']/li/ul/li[6]/a")).click();
 
         driver.findElement(By.cssSelector("#treemenu > li > ul > li:nth-child(6) > ul > li:nth-child(1) > a")).click();
 
-       Thread.sleep(2000);
-       WebElement first = driver.findElement(By.cssSelector(".dual-list>.well>.list-group>li:first-of-type"));
-       first.click();
+        Thread.sleep(2000);
+        WebElement first = driver.findElement(By.cssSelector(".dual-list>.well>.list-group>li:first-of-type"));
+        first.click();
 
 
         WebElement clickR = driver.findElement(By.cssSelector(".list-arrows>button:nth-child(2)"));

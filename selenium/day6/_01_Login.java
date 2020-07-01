@@ -14,6 +14,7 @@ public class _01_Login extends BaseDriver {
 
     // login function
     public static String login(String username, String password) {
+
         WebElement usernameInput = driver.findElement(By.xpath("//input[@id='user-name']"));
         usernameInput.clear();
         usernameInput.sendKeys(username);
