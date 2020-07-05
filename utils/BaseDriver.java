@@ -9,5 +9,6 @@ public class BaseDriver {
     static {
         System.setProperty("webdriver.chrome.driver", "/Users/doganaykurt/Desktop/chromedriver");
         driver = new ChromeDriver();
+        driver.manage().window().maximize();
     }
 }
