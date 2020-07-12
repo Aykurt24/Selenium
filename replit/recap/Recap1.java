@@ -4,7 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utils.BaseDriver;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -14,6 +13,7 @@ public class Recap1 extends BaseDriver {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         int number1 = (int) (Math.random()*12);
         int number2 = (int) (Math.random()*12);
+
         List <WebElement> itmeNames = driver.findElements(By.cssSelector(".extra>a"));
         System.out.println(itmeNames.size());
         itmeNames.get(number1).click();
