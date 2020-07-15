@@ -11,7 +11,7 @@ import utils.BaseDriver;
 import java.util.ArrayList;
 import java.util.List;
 
-public class _06_ShoppingCartPracticeTask3 extends BaseDriver {
+public class _10_ShoppingCartPracticeTask3 extends BaseDriver {
     public static void main(String[] args) {
         driver.get("http://practice.automationtesting.in/shop/");
         driver.manage().window().maximize();
