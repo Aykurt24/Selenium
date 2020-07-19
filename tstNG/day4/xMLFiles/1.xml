@@ -1,0 +1,7 @@
+<suite name="MySuite">
+    <test name="myTest1">
+        <classes>
+            <class name="tstNG.day4._01_Intro"></class>
+        </classes>
+    </test>
+</suite>

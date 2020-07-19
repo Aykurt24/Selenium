@@ -1,0 +1,17 @@
+<!--Test1 and Test2 tag name should be different-->
+
+<suite name="suite1">
+    <test name="test1">
+        <classes>
+            <class name="tstNG.day4._01_Intro"></class>
+        </classes>
+    </test>
+
+    <test name="test2">
+        <classes>
+            <class name="tstNG.day4._02_Intro"></class>
+        </classes>
+    </test>
+</suite>
+
+        <!--We are going to use multiple tests when we need to give different browser name , different search items-->

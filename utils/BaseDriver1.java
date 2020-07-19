@@ -16,7 +16,7 @@ public class BaseDriver1 {
 
     protected WebDriver driver;
 
-    @BeforeMethod
+    @BeforeMethod (groups = {"SmokeTesting","Regression"})
     public void BeforeMethod() {
         System.setProperty("webdriver.chrome.driver", "/Users/doganaykurt/Desktop/chromedriver");
         driver = new ChromeDriver();

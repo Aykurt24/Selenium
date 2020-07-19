@@ -1,0 +1,31 @@
+<!--        Please run the Day2.ValidateMenu-->
+<!--        add it in the regression test-->
+
+<!--        Day2.subscribe in the smoke test-->
+<!--        Day2.EditAccount in the smoke test-->
+
+<suite name="suite1">
+    <test name="test1">
+        <groups>
+            <run>
+                <include name="Regression"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="tstNG.day2._01_ValidateMenu">
+            </class>
+        </classes>
+    </test>
+
+    <test name="test2">
+        <groups>
+            <run>
+                <include name="SmokeTesting"> </include>
+            </run>
+        </groups>
+        <classes>
+            <class name="tstNG.day2._02_Subscribe"></class>
+            <class name="tstNG.day2._03_EditAccount"></class>
+        </classes>
+    </test>
+</suite>
