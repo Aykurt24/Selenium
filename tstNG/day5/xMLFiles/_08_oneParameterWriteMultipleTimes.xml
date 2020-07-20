@@ -1,0 +1,19 @@
+<!--&lt;!&ndash;if we have a method with only one parameter-->
+<!--, and in xml code we enter the same parameter multiple times with different values, will it run multiple time?&ndash;&gt;-->
+
+<suite name="suite1">
+    <test name="test1">
+
+        <parameter name="param1" value="This is the first parameter in this xml"></parameter>
+        <parameter name="param2" value="This is the Second parameter in this xml"></parameter>
+        <parameter name="param1" value="This is the third parameter in this xml"></parameter>
+        <parameter name="param2" value="This is the forth parameter in this xml"></parameter>
+        <parameter name="param1" value="This is the sixth parameter in this xml"></parameter>
+        <parameter name="param2" value="This is theseventh parameter in this xml"></parameter>
+
+        <classes>
+            <class name="tstNG.day5._04_OneTestMultipleParameter"></class>
+        </classes>
+    </test>
+
+</suite>

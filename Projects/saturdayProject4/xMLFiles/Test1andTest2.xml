@@ -1,0 +1,11 @@
+<suite name="suite1">
+    <test name="test1">
+        <parameter name ="user" value="doganaykurt@gmail.com"></parameter>
+        <parameter name ="password" value="FalcoN24."></parameter>
+
+        <classes>
+            <class name="Projects.saturdayProject4.Tests.Test1"></class>
+            <class name="Projects.saturdayProject4.Tests.Test2"></class>
+        </classes>
+    </test>
+</suite>

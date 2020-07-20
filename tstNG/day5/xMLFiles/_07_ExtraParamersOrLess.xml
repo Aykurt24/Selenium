@@ -1,0 +1,24 @@
+<!--what happens when we put more or less parameters?-->
+<!--<suite name="suite1">-->
+<!--    <test name="test1">-->
+
+<!--        <parameter name="param1" value="This is the first parameter in this xml"></parameter>-->
+<!--        <parameter name="param2" value="This is the SECOND parameter in this xml"></parameter>-->
+<!--        <parameter name="param3" value="This is the THIRD parameter in this xml"></parameter>-->
+<!--        <classes>-->
+<!--            <class name="Day5._04_OneTestMultipleParameter"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--</suite>-->
+<suite name="suite1">
+    <test name="test1">
+
+        <parameter name="param1" value="This is the first parameter in this xml"></parameter>
+
+        <classes>
+            <class name="tstNG.day5._04_OneTestMultipleParameter"></class>
+        </classes>
+    </test>
+
+</suite>

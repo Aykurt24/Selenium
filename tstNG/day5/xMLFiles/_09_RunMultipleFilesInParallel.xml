@@ -1,0 +1,20 @@
+<!--Add Day5 special , Day5 searchFunctionality , Day 5 Contact us , Day3address functionality  -->
+
+<!-- With a parallel keyword we can run the classes in parallel -->
+<!--Thread count is How many browser you would like to open in one time-->
+
+<suite name="suite1" parallel="methods" thread-count="20">
+    <test name="test1">
+
+        <parameter name="searchItem" value="Mac"></parameter>
+        <parameter name="enquiry" value="Count from 0 to 10"></parameter>
+
+        <classes>
+            <class name="tstNG.day5._02_Specials"></class>
+            <class name="tstNG.day5._03_SearchFunctionality"></class>
+            <class name="tstNG.day5._01_ContactUs"></class>
+            <class name="tstNG.day3._02_AddressFunctionality"></class>
+        </classes>
+    </test>
+
+</suite>

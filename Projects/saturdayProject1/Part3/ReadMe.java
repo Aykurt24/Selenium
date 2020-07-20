@@ -1,4 +1,4 @@
-package saturdayProject1.Part3;
+package Projects.saturdayProject1.Part3;
 
 
 import org.openqa.selenium.By;

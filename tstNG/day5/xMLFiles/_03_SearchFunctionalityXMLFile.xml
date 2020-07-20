@@ -1,0 +1,16 @@
+<suite name="suite1">
+    <test name="test1">
+        <parameter name="search" value="mac"></parameter>
+        <classes>
+            <class name="tstNG.day5._03_SearchFunctionality"></class>
+        </classes>
+    </test>
+
+    <test name="test2">
+        <parameter name="search" value="iphone"></parameter>
+        <classes>
+            <class name="tstNG.day5._03_SearchFunctionality"></class>
+        </classes>
+    </test>
+
+</suite>

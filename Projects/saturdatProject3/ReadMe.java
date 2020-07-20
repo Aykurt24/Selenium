@@ -1,4 +1,4 @@
-package saturdatProject3;
+package Projects.saturdatProject3;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;

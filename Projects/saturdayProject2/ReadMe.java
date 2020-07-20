@@ -1,4 +1,4 @@
-package saturdayProject2;
+package Projects.saturdayProject2;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
