@@ -1,0 +1,10 @@
+<suite name = "suite1">
+    <test name = "test1">
+
+        <parameter name ="browser" value="firefox"></parameter>
+        <parameter name ="enquiry" value ="Hello world Hello world"></parameter>
+        <classes>
+            <class name = "tstNG.day5._01_ContactUs"></class>
+        </classes>
+    </test>
+</suite>

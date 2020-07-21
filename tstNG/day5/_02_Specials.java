@@ -5,10 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import utils.BaseDriver1;
+import utils.BaseMultipleDriver;
 
 import java.util.List;
 
-public class _02_Specials extends BaseDriver1 {
+public class _02_Specials extends BaseMultipleDriver {
 
     @Test
     public void specials (){

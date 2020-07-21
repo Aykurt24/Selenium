@@ -6,9 +6,10 @@ import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import utils.BaseDriver1;
+import utils.BaseMultipleDriver;
 import utils.ReusableMethods;
 
-public class _01_ContactUs extends BaseDriver1 {
+public class _01_ContactUs extends BaseMultipleDriver {
     /*
         Click on contact us button in the page(bottom of the page)
         Enter the value for Enquiry

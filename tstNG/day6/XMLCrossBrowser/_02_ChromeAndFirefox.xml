@@ -1,0 +1,17 @@
+<suite name="suite1">
+    <test name="InFirefox">
+        <parameter name="browser" value="firefox"></parameter>
+        <parameter name="enquiry" value = "enquiry is here"></parameter>
+        <classes>
+            <class name="tstNG.day5._01_ContactUs"></class>
+        </classes>
+    </test>
+
+    <test name="InChrome">
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="enquiry" value = "enquiry is for chrome here "></parameter>
+        <classes>
+            <class name="tstNG.day5._01_ContactUs"></class>
+        </classes>
+    </test>
+</suite>
