@@ -6,8 +6,10 @@
 <suite name="suite1" parallel="methods" thread-count="20">
     <test name="test1">
 
-        <parameter name="searchItem" value="Mac"></parameter>
+
+        <parameter name="search" value="Mac"></parameter>
         <parameter name="enquiry" value="Count from 0 to 10"></parameter>
+        <parameter name="browser" value="chrome"></parameter>
 
         <classes>
             <class name="tstNG.day5._02_Specials"></class>

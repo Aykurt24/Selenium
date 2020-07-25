@@ -1,0 +1,25 @@
+<!--    Task 1 Create a xml file which is running Day 5 Specials - Day5 search Function in the firefox and in the chrome  -->
+<!-- if parallel is = methods then it will run the class as parallel -->
+<suite name = "SuiteForCrossBrowser" parallel="methods" thread-count="4">
+    <test name = "Firefox">
+
+        <parameter name="browser" value="firefox"></parameter>
+        <parameter name="search" value="samsung"></parameter>
+
+        <classes>
+            <class name="tstNG.day5._02_Specials"></class>
+            <class name="tstNG.day5._03_SearchFunctionality"></class>
+        </classes>
+    </test>
+
+    <test name ="chrome">
+
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="search" value="iPhone"></parameter>
+        <classes>
+            <class name="tstNG.day5._02_Specials"></class>
+            <class name="tstNG.day5._03_SearchFunctionality"></class>
+        </classes>
+    </test>
+
+</suite>
