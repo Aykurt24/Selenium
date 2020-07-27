@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
+
 public class TestNGPractice2 extends BaseDriverForProjecet5 {
 
     ResuableMethodForProject5 methods = new ResuableMethodForProject5();
@@ -43,8 +44,6 @@ public class TestNGPractice2 extends BaseDriverForProjecet5 {
         dressElements.deleteWhishlistButton.click();
 
         driver.switchTo().alert().accept();
-
-
 
     }
 }

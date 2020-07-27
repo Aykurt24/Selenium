@@ -7,6 +7,7 @@ public class TestNGPractices1 extends BaseDriverForProjecet5 {
 
 
     ResuableMethodForProject5 methods = new ResuableMethodForProject5();
+
     @Test
     public void Test1 () throws InterruptedException {
 
@@ -67,15 +68,5 @@ public class TestNGPractices1 extends BaseDriverForProjecet5 {
 
        Thread.sleep(2000);
        Assert.assertFalse(addressElements.getAddressTitle.getText().equalsIgnoreCase("Mars"));
-
-
-
-
-
-
-
-
-
-
     }
 }

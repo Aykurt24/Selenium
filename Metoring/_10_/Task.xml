@@ -1,0 +1,28 @@
+<suite name="task">
+    <test name="test1">
+        <parameter name="search" value="sunglasses"></parameter>
+        <parameter name="quantity" value=" #js-473-nav > li:nth-child(1) > a > div.sub-cat-count"></parameter>
+        <classes>
+            <class name="Metoring._10_.Task1"></class>
+        </classes>
+
+    </test>
+
+    <test name="test2">
+        <parameter name="search" value="umbrella for kids"></parameter>
+        <parameter name="quantity" value="#js-481-nav > li > a > div.sub-cat-count"></parameter>
+        <classes>
+            <class name="Metoring._10_.Task1"></class>
+        </classes>
+
+    </test>
+
+    <test name="test3">
+        <parameter name="search" value="kid bicycle"></parameter>
+        <parameter name="quantity" value="#js-66-nav > li:nth-child(5) > a > div.sub-cat-count"></parameter>
+        <classes>
+            <class name="Metoring._10_.Task1"></class>
+        </classes>
+
+    </test>
+</suite>

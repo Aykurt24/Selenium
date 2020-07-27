@@ -20,6 +20,7 @@ public class BaseDriverForProjecet5 {
     public void BeforeMethod(String browser){
 
 
+
         if(browser.equalsIgnoreCase("chrome")){
             System.setProperty("webdriver.chrome.driver", "/Users/doganaykurt/Desktop/chromedriver");
             driver = new ChromeDriver();
@@ -35,7 +36,6 @@ public class BaseDriverForProjecet5 {
 
         WebElement signIn = driver.findElement(By.linkText("Sign in"));
         signIn.click();
-
 
         WebElement email = driver.findElement(By.cssSelector("#email"));
         email.sendKeys("doganaykurt@gmail.com");

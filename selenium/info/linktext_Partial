@@ -1,0 +1,14 @@
+ /*
+       link text is checking is there any element in the website is equal to my text in the double
+        quotes.
+
+        link text is working as .equals in the java
+
+
+ /*
+        partial link text is there any element in the website contains my text in the double
+        quotes
+
+        partial link text is working as .contains in the java
+
+ */

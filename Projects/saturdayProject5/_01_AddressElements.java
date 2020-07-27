@@ -39,9 +39,6 @@ public class _01_AddressElements {
     @FindBy (id = "city")
     public WebElement newCity;
 
-//    @FindBy (id = "id_state")
-//    public WebElement newState;
-
     @FindAll({
             @FindBy(css = "#id_state>option")
     })

@@ -11,9 +11,9 @@ public class _02_FindingById {
         WebDriver driver = new ChromeDriver();// This will open the chrome browser.
         driver.get("http://www.practiceselenium.com");// This wil open the website
         Thread.sleep(3000);//After opening the website it will be open in 3 second.
-        WebElement element = driver.findElement(By.id("wsb-element-00000000-0000-0000-0000-000450914887"));
-        WebElement element1 = driver.findElement(By.id("wsb-element-00000000-0000-0000-0000-000450914886"));
-        System.out.println( element1.getText() + "\n" + element.getText());// Getting text from website and print it on the console.
+        WebElement looseTea = driver.findElement(By.id("wsb-element-00000000-0000-0000-0000-000450914894"));
+        //WebElement element1 = driver.findElement(By.id("wsb-element-00000000-0000-0000-0000-000450914886"));
+        System.out.println( looseTea.getText());// Getting text from website and print it on the console.
         driver.quit();// This will close the website
 
 

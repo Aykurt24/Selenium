@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class _01_Practice {
     public static void main(String[] args) throws InterruptedException {
 
-        System.setProperty("webdriver.chrome.driver", "D:\\Selenium dependency\\drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "/Users/doganaykurt/Desktop/chromedriver");
 
         WebDriver driver = new ChromeDriver();
 
@@ -20,7 +20,7 @@ public class _01_Practice {
         WebElement searchInput = driver.findElement(By.id("global-enhancements-search-query"));
         searchInput.sendKeys("TeddyBear");
 
-//        driver.findElement(By.className("wt-input-btn-group__btn"))
+//      driver.findElement(By.className("wt-input-btn-group__btn"))
         WebElement searchIcon = driver.findElement(By.cssSelector("button[aria-label='Search']"));
         searchIcon.click();
 
@@ -39,10 +39,11 @@ public class _01_Practice {
 
         System.out.println(valueOfInput);
 
-//        remove the text from the input.
+//      remove the text from the input.
         searchInput.clear();
 
         searchInput.sendKeys("phone");
+
 
 //        click on search icon
         searchIcon = driver.findElement(By.cssSelector("button[aria-label='Search']"));
@@ -50,6 +51,19 @@ public class _01_Practice {
 
         String URL2 = driver.getCurrentUrl();
         System.out.println(URL2);
+
+        searchInput = driver.findElement(By.id("global-enhancements-search-query"));
+
+        searchInput.clear();
+        searchInput.sendKeys("ring");
+
+        searchIcon = driver.findElement(By.cssSelector("button[aria-label='Search']"));
+        searchIcon.click();
+
+        String URL3 = driver.getCurrentUrl();
+        System.out.println(URL3);
+
+
 
         /*
          StaleElementReferenceException

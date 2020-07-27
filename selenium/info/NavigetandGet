@@ -1,0 +1,7 @@
+/*
+            Difference between the driver.get and driver.navigate
+                Navigate has more actoins like navigate.back and navigate.forward
+                 in this way we can navigate previous page and next page.
+
+                 Driver.get does not have any action like back and forward.
+*/

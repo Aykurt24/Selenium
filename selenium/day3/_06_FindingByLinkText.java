@@ -10,9 +10,13 @@ public class _06_FindingByLinkText {
         System.setProperty("webdriver.chrome.driver", "/Users/doganaykurt/Desktop/chromedriver");
         WebDriver driver = new ChromeDriver();
         driver.get("http://www.practiceselenium.com");
-        WebElement element = driver.findElement(By.linkText("Check Out"));
-        WebElement element1 = driver.findElement(By.linkText("Menu"));
-        System.out.println(element.getText() + "\n"  + element1.getText());
-        driver.quit();
+
+         /*
+        It the linktext and partial link text is key sensitive
+         */
+         WebElement element = driver.findElement(By.linkText("Check Out"));
+         WebElement element1 = driver.findElement(By.linkText("Menu"));
+         System.out.println(element.getText() + "\n"  + element1.getText());
+         driver.quit();
     }
 }
